@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Black Sea</title>
+  
+  <link rel="stylesheet" href="css/normalize.css">
+  <!-- подключение основных стилей -->
+  <link rel="stylesheet" href="css/style.css">
+				
+</head>
+<body>
+
+<div class="main">
+  <div class="header">
+      <h2 class="header-logo">Black Sea</h2>
+      <div class="menu">
+        <ul>
+          <li class="menu-link" href="#">Home</li>/
+          <li class="menu-link" href="#">About</li>/
+          <li class="menu-link" href="#">Portfolio</li>/
+          <li class="menu-link" href="#">Contact me</li>
+        </ul>
+      </div>
+      <!-- /.menu -->
+  </div>
+  <!-- /.header -->
+  <h1 class="main-title"> We need the tonic of<br> wildness</h1>
+  <div class="main-link">
+      <a href="#center" class="main-btn">Read more</a>
+  </div>
+  <!-- /.main-link -->
+</div>
+<!-- /.main -->
+
+
+<div class="center" id="center">
+  <div class="content">
+      <h2 class="content-title">
+        At the same time that we are earnest to explore <br><strong>&</strong> learn all things
+        </h2>
+      <!-- /.content-title -->
+      <p class="content-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
+        standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+        but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset 
+        sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+      </p>
+      <!-- /.content-text -->
+      <div class="content-icons">
+        <img src="img/basket.png" alt="" class="content-icons__item">
+        <img src="img/world.png" alt="" class="content-icons__item">
+        <img src="img/briefcase.png" alt="" class="content-icons__item">
+      </div>
+      <!-- /.content-icons -->
+    </div>
+    <!-- /.content -->
+    
+    <div class="testimonial">
+      <div class="testimonial-top">
+        <img src="img/man.png" alt="" class="testimonial-top__img">
+        <h3 class="testimonial-top__title">Dhavan<br><img src="img/copy.png" alt="" class="testimonila-top__copy"></h3>    
+      </div>
+      <!-- /.testimonial-top -->
+      <p class="testimonial-text">
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
+          standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to 
+          a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting
+      </p>
+      <!-- /.testimonial-text -->
+    </div>
+    <!-- /.testimonial -->
+</div>
+<!-- /.center -->
+
+<div class="bottom">
+  <div class="bottom-maps"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2951260.1371108266!2d32.36734853807954!3d43.75022827074369!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x405db94b77d2f233%3A0xfe5cd6c659adc698!2z0KfRkdGA0L3QvtC1INC80L7RgNC1!5e0!3m2!1sru!2sua!4v1557926943560!5m2!1sru!2sua" 
+    width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+  </div>
+  <form action="" class="bottom-form">
+    <input type="text" class="bottom-form__text" placeholder="Name">
+    <input type="email" class="bottom-form__text" placeholder="Email address">
+    <input type="text" class="bottom-form__message" placeholder="Message">
+    <a href="#" class="bottom-form__btn annunciation-btn"><img src="img/btn.png" alt=""></a>
+  </form>
+</div>
+<!-- /.bottom -->
+
+<footer>
+  <p class="copyright">Copyright © 2012 Css Author.com</p>
+</footer>
+
+<div class="annunciation">
+  <div class="annunciation-dialog">
+    <div class="annunciation-content">
+      <button class="annunciation-close">&times;</button>
+      <p class="annunciation-text">Your message has been sent successfully!</p>
+    </div>
+  </div>
+</div>
+
+<!-- Подключение jQuery -->
+<script src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script>
+
+<script>
+  $(document).ready(function () {
+    $('.annunciation-btn').on('click', function (event) {
+      event.preventDefault();
+      $('.annunciation').fadeIn();
+    });
+    $('.annunciation-close').on('click', function (event) {
+      event.preventDefault();
+      $('.annunciation').fadeOut();
+    });
+  });
+</script>
+
+</body>
+</html>

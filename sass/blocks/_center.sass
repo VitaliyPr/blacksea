@@ -1,0 +1,53 @@
+.center
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+
+.content
+  height: 600px
+  display: flex
+  flex-direction: column
+  justify-content: space-around
+  align-items: center
+  color: $text_black
+  &-title
+    font-size: 30px
+    font-weight: 300
+    line-height: 49px
+    text-align: center
+    margin: 0
+  &-text
+    width: 50%
+    font-size: 14px
+    font-weight: 400
+    line-height: 22px
+    text-align: center
+  &-icons
+    &__item 
+      padding-right: 80px
+      padding-left: 80px
+
+.testimonial
+  height: 500px
+  display: flex
+  flex-direction: column
+  justify-content: space-around
+  align-items: center
+  background-color: $content
+  &-top
+    display: flex
+    &__img  
+      width: 150px
+      height: 150px
+      margin-right: 30px
+    &__title
+      color: $text_white
+      text-transform: uppercase
+      font-size: 26px
+      font-weight: 70
+  &-text
+    color: $text_white
+    width: 50%
+    font-size: 18px
+    font-weight: 300
+    line-height: 32px

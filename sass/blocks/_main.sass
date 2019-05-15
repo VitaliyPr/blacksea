@@ -1,0 +1,58 @@
+.main
+  height: 100vh
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  align-items: center
+  background: url(../img/slide3.jpg) no-repeat center
+  background-size: cover
+  &-title
+    +halvetica
+    color: $text_black
+    font-size: 44px
+    font-weight: 700
+    line-height: 58px
+    text-transform: uppercase
+    text-align: center
+  &-link
+    height: 10vh
+  &-btn
+    text-decoration: none
+    color: $text
+    border: 3px solid #afb1b4
+    border-radius: 10px
+    padding: 10px 45px
+    font-size: 30px
+    font-weight: 300
+    background-color: rgba(228, 228, 228, 0.1)
+    
+
+.header
+  padding-top: 20px
+  width: 90%
+  display: flex
+  justify-content: space-between
+  align-items: center
+  &-logo
+    margin: 0
+    +cherry
+    color: $text_white
+    font-size: 40px
+    font-weight: 400
+
+.menu
+  width: 40%
+  +h_lt
+  font-size: 18px
+  font-weight: 400
+  color: $menu
+  ul
+    display: flex
+    justify-content: space-around
+  &-link
+    text-transform: uppercase
+    list-style: none
+    &:hover
+      color: darken($menu, 50%)
+      opacity: 0.8
+      cursor: pointer
